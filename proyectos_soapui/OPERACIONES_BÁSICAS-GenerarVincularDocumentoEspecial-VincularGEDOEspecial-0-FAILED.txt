@@ -1,0 +1,47 @@
+Status: FAILED
+Time Taken: 3
+Size: 107
+Timestamp: Mon Jan 23 16:33:16 ART 2017
+TestStep: VincularGEDOEspecial
+
+----------------- Messages ------------------------------
+[Invalid HTTP Status Codes] Response status code: 503 is in invalid list of status codes
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: http://ee-rest-backend.nac.everis.int
+Encoding: UTF-8
+Method: POST
+StatusCode: 503
+URL: http://ee-rest-backend.nac.everis.int/gde-restfull-api-web/documento/vincularDocumentosOficialesNumeroEspecial
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.1.1 (java 1.5)]
+Host: [ee-rest-backend.nac.everis.int]
+Accept-Encoding: [gzip,deflate]
+Content-Length: [191]
+Content-Type: [application/json;charset=UTF-8]
+
+POST http://ee-rest-backend.nac.everis.int/gde-restfull-api-web/documento/vincularDocumentosOficialesNumeroEspecial HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json;charset=UTF-8
+Content-Length: 191
+Host: ee-rest-backend.nac.everis.int
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+
+
+
+---------------- Response --------------------------
+Cache-Control: [no-cache]
+Connection: [close]
+#status#: [HTTP/1.0 503 Service Unavailable]
+Content-Type: [text/html]
+
+<html>
+   <body>
+      <h1>503 Service Unavailable</h1>
+      No server is available to handle this request.
+   </body>
+</html>

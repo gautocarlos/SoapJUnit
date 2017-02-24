@@ -1,0 +1,13 @@
+Status: FAILED
+Time Taken: 0
+Size: 0
+Timestamp: Fri Feb 24 09:37:00 ART 2017
+TestStep: usuario_EE_sistema_documentos
+Error:com.eviware.soapui.impl.wsdl.teststeps.PropertyTransferException: Missing target property
+
+----------------- Messages ------------------------------
+Error performing transfer [EE] - Missing target property
+----------------------------------------------------
+EE transferred [[Missing target property]] from [#TestSuite#.EE] to [vincularDocumentoGEDO.Request]
+------------ target path -------------
+codigoEE

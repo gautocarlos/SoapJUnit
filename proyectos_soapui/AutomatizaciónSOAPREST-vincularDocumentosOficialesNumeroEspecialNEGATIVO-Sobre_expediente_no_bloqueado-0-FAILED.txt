@@ -1,0 +1,45 @@
+Status: FAILED
+Time Taken: 4
+Size: 1105
+Timestamp: Mon Jan 23 16:25:04 ART 2017
+TestStep: Sobre expediente no bloqueado
+
+----------------- Messages ------------------------------
+[Contains] Missing token [No se puede operar sobre un expediente que no se encuentra bloqueado ( EE)] in Response
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: http://ee-rest-backend.nac.everis.int
+Encoding: UTF-8
+Method: POST
+StatusCode: 404
+URL: http://ee-rest-backend.nac.everis.int/gde-restfull-api-web/documento/vincularDocumentosOficialesNumeroEspecial
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.1.1 (java 1.5)]
+Host: [ee-rest-backend.nac.everis.int]
+Accept-Encoding: [gzip,deflate]
+Content-Length: [190]
+Content-Type: [application/json;charset=UTF-8]
+
+POST http://ee-rest-backend.nac.everis.int/gde-restfull-api-web/documento/vincularDocumentosOficialesNumeroEspecial HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json;charset=UTF-8
+Content-Length: 190
+Host: ee-rest-backend.nac.everis.int
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+
+
+
+---------------- Response --------------------------
+Server: [Apache-Coyote/1.1]
+Connection: [close]
+#status#: [HTTP/1.1 404 No Encontrado]
+Content-Length: [1105]
+Content-Language: [es]
+Date: [Mon, 23 Jan 2017 19:25:04 GMT]
+Content-Type: [text/html;charset=utf-8]
+
+<html><head><title>Apache Tomcat/7.0.70 - Informe de Error</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>Estado HTTP 404 - /gde-restfull-api-web/documento/vincularDocumentosOficialesNumeroEspecial</h1><HR size="1" noshade="noshade"><p><b>type</b> Informe de estado</p><p><b>mensaje</b> <u>/gde-restfull-api-web/documento/vincularDocumentosOficialesNumeroEspecial</u></p><p><b>descripción</b> <u>El recurso requerido no está disponible.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/7.0.70</h3></body></html>

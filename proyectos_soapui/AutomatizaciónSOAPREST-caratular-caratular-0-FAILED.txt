@@ -1,0 +1,77 @@
+Status: FAILED
+Time Taken: 446
+Size: 330
+Timestamp: Tue Feb 21 15:57:54 ART 2017
+TestStep: caratular
+
+----------------- Messages ------------------------------
+[Invalid HTTP Status Codes] Response status code: 500 is in invalid list of status codes
+
+----------------- Properties ------------------------------
+Endpoint: http://mule.nac.everis.int/EEServices/generar-caratula
+Encoding: UTF-8
+
+---------------- Request ---------------------------
+Request Headers: SOAPAction : ""
+Accept-Encoding : gzip,deflate
+Content-Type : text/xml;charset=UTF-8
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ar="http://ar.gob.gcaba.ee.services.external/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ar:generarExpedienteElectronicoCaratulacion>
+         <request>
+            <codigoPostal>1113</codigoPostal>
+            <cuitCuil>20111111139</cuitCuil>
+            <departamento/>
+            <descripcion>Buzón MARI-ALS</descripcion>
+            <domicilio>Alvear 1234</domicilio>
+            <email>buzonmarials@yopmail.com</email>
+            <empresa>false</empresa>
+            <externo>true</externo>
+            <interno>false</interno>
+            <loggeduser>CCARLOS</loggeduser>
+            <motivo>Motivo: Buzón MARI-ALS</motivo>
+            <motivoExterno/>
+            <nombre>NAutomatizado</nombre>
+            <apellido>AAutomatizado</apellido>
+            <nroDoc>34256123</nroDoc>
+            <persona>true</persona>
+            <piso/>
+            <razonSocial/>
+            <segundoApellido/>
+            <segundoNombre/>
+            <selectTrataCod>MCGC0503A</selectTrataCod>
+            <sistema>AUTOMATIZADO</sistema>
+            <telefono/>
+            <tercerApellido/>
+            <tercerNombre/>
+            <tieneCuitCuil/>
+            <tipoDoc>DU</tipoDoc>
+         </request>
+      </ar:generarExpedienteElectronicoCaratulacion>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+---------------- Response --------------------------
+Response Headers: Transfer-Encoding : chunked
+X-MULE_SESSION : rO0ABXNyACNvcmcubXVsZS5zZXNzaW9uLkRlZmF1bHRNdWxlU2Vzc2lvbi7rdtEW7GGKAwAEWgAFdmFsaWRMAA1mbG93Q29uc3RydWN0dAAmTG9yZy9tdWxlL2FwaS9jb25zdHJ1Y3QvRmxvd0NvbnN0cnVjdDtMAAJpZHQAEkxqYXZhL2xhbmcvU3RyaW5nO0wAD3NlY3VyaXR5Q29udGV4dHQAJ0xvcmcvbXVsZS9hcGkvc2VjdXJpdHkvU2VjdXJpdHlDb250ZXh0O3hwAHB0ACQ2MzM2NjJhNS1mODY2LTExZTYtODc5Yi1mZmRkM2I3YjAxMDBwc3IAJWphdmEudXRpbC5Db2xsZWN0aW9ucyRTeW5jaHJvbml6ZWRNYXAbc/kJS0s5ewMAAkwAAW10AA9MamF2YS91dGlsL01hcDtMAAVtdXRleHQAEkxqYXZhL2xhbmcvT2JqZWN0O3hwc3IAJG9yZy5tdWxlLnV0aWwuQ2FzZUluc2Vuc2l0aXZlSGFzaE1hcJ3R2e9nRc4AAwAAeHB3DD9AAAAAAAAQAAAAAHhxAH4ACXh4
+Server : Mule Core/3.4.0
+X-MULE_ENCODING : UTF-8
+Connection : close
+http.status : 500
+#status# : HTTP/1.1 500 Internal Server Error
+http.method : POST
+Date : Tue, 21 Feb 2017 15:48:52 -0300
+Content-Type : text/xml; charset=UTF-8
+
+
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+      <soap:Fault>
+         <faultcode>soap:Server</faultcode>
+         <faultstring>Error al comunicarse con servicios externos. Error: MCGC0503A - La repartición "DGALP" no está habilitada para utilizar este trámite</faultstring>
+      </soap:Fault>
+   </soap:Body>
+</soap:Envelope>

@@ -1,0 +1,24 @@
+2017-02-24 15:50:13,593 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\cargauto\soapui-settings.xml]
+2017-02-24 15:50:20,488 INFO  [PluginManager] 0 plugins loaded in 15 ms
+2017-02-24 15:50:20,488 INFO  [DefaultSoapUICore] All plugins loaded
+2017-02-24 15:50:23,293 INFO  [WsdlProject] Loaded project from [file:/C:/Users/cargauto/workspace_neon/automatizacion_001/proyectos_soapui/0000-AUT-001_soapui-project.xml]
+2017-02-24 15:50:39,158 INFO  [HttpAuthenticationRequestFilter$UPDCredentialsProvider] webdav.gcaba.everis.int:80 requires authentication with the realm 'DAV'
+2017-02-24 15:50:39,468 INFO  [WebClient] statusCode=[401] contentType=[text/html]
+2017-02-24 15:50:39,474 INFO  [WebClient] <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>401 Authorization Required</title>
+</head><body>
+<h1>Authorization Required</h1>
+<p>This server could not verify that you
+are authorized to access the document
+requested.  Either you supplied the wrong
+credentials (e.g., bad password), or your
+browser doesn't understand how to supply
+the credentials required.</p>
+<hr>
+<address>Apache/2.2.3 (CentOS) Server at webdav.gcaba.everis.int Port 80</address>
+</body></html>
+
+2017-02-24 15:50:40,018 ERROR [SoapUI] com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException: 401 Authorization Required for http://webdav.gcaba.everis.int/guarda-documental-prod/
+2017-02-24 15:50:43,786 INFO  [log] projectDir: 
+2017-02-24 15:50:43,787 INFO  [log] filename: ACTO-2017-00099661-APN-RUBI

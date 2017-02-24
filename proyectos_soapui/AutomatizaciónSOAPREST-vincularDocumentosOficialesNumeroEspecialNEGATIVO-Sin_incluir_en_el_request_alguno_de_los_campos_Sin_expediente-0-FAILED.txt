@@ -1,0 +1,127 @@
+Status: FAILED
+Time Taken: 35
+Size: 10179
+Timestamp: Fri Feb 24 09:36:47 ART 2017
+TestStep: Sin incluir en el request alguno de los campos: Sin expediente
+
+----------------- Messages ------------------------------
+[Contains] Missing token [Debe ingresar un Expediente valido] in Response
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: http://ee-rest-backend.nac.everis.int
+Encoding: UTF-8
+Method: POST
+StatusCode: 500
+URL: http://ee-rest-backend.nac.everis.int/gde-restfull-api-web/documento/vincularDocumentosOficialesNumeroEspecial
+
+---------------- Request ---------------------------
+Accept-Encoding: [gzip,deflate]
+Content-Type: [application/json;charset=UTF-8]
+
+POST http://ee-rest-backend.nac.everis.int/gde-restfull-api-web/documento/vincularDocumentosOficialesNumeroEspecial HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json;charset=UTF-8
+
+
+
+---------------- Response --------------------------
+Transfer-Encoding: [chunked]
+Server: [Apache-Coyote/1.1]
+Connection: [close]
+#status#: [HTTP/1.1 500 Error Interno del Servidor]
+Content-Language: [es]
+Date: [Fri, 24 Feb 2017 12:36:47 GMT]
+Content-Type: [text/html;charset=utf-8]
+
+<html><head><title>Apache Tomcat/7.0.70 - Informe de Error</title><style><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}A.name {color : black;}HR {color : #525D76;}--></style> </head><body><h1>Estado HTTP 500 - Request processing failed; nested exception is ar.gob.gde.restfull.api.ee.exceptions.ErrorException: Debe ingresar un Expediente válido</h1><HR size="1" noshade="noshade"><p><b>type</b> Informe de Excepción</p><p><b>mensaje</b> <u>Request processing failed; nested exception is ar.gob.gde.restfull.api.ee.exceptions.ErrorException: Debe ingresar un Expediente válido</u></p><p><b>descripción</b> <u>El servidor encontró un error interno que hizo que no pudiera rellenar este requerimiento.</u></p><p><b>excepción</b> <pre>org.springframework.web.util.NestedServletException: Request processing failed; nested exception is ar.gob.gde.restfull.api.ee.exceptions.ErrorException: Debe ingresar un Expediente válido
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:965)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:855)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:650)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:829)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+</pre></p><p><b>causa raíz</b> <pre>ar.gob.gde.restfull.api.ee.exceptions.ErrorException: Debe ingresar un Expediente válido
+	ar.gob.gde.restfull.api.ee.DocumentoRestfullApi.vincularDocumentosOficialesNumeroEspecial(DocumentoRestfullApi.java:100)
+	ar.gob.gde.restfull.api.ee.DocumentoRestfullApi$$FastClassBySpringCGLIB$$bf8639c9.invoke(&lt;generated&gt;)
+	org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:700)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:80)
+	ar.gob.gde.restfull.api.ee.aspect.ServiceLoggerAspect.intersect(ServiceLoggerAspect.java:19)
+	sun.reflect.GeneratedMethodAccessor92.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	java.lang.reflect.Method.invoke(Unknown Source)
+	org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:621)
+	org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:610)
+	org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:65)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:91)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:633)
+	ar.gob.gde.restfull.api.ee.DocumentoRestfullApi$$EnhancerBySpringCGLIB$$951f3f70.vincularDocumentosOficialesNumeroEspecial(&lt;generated&gt;)
+	sun.reflect.GeneratedMethodAccessor986.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	java.lang.reflect.Method.invoke(Unknown Source)
+	org.springframework.web.method.support.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:215)
+	org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:132)
+	org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:745)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:685)
+	org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:80)
+	org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:919)
+	org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:851)
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:953)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:855)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:650)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:829)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+</pre></p><p><b>causa raíz</b> <pre>ar.gob.gcaba.ee.services.external.exceptions.ProcesoFallidoException: Debe ingresar un Expediente válido
+	ar.gob.gcaba.ee.services.external.impl.AdministracionDeDocumentosOficialesServiceImpl.vincularDocumentosOficialesNumeroEspecial(AdministracionDeDocumentosOficialesServiceImpl.java:350)
+	sun.reflect.GeneratedMethodAccessor987.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	java.lang.reflect.Method.invoke(Unknown Source)
+	org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+	com.sun.proxy.$Proxy121.vincularDocumentosOficialesNumeroEspecial(Unknown Source)
+	ar.gob.gde.restfull.api.ee.DocumentoRestfullApi.vincularDocumentosOficialesNumeroEspecial(DocumentoRestfullApi.java:98)
+	ar.gob.gde.restfull.api.ee.DocumentoRestfullApi$$FastClassBySpringCGLIB$$bf8639c9.invoke(&lt;generated&gt;)
+	org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204)
+	org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:700)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:80)
+	ar.gob.gde.restfull.api.ee.aspect.ServiceLoggerAspect.intersect(ServiceLoggerAspect.java:19)
+	sun.reflect.GeneratedMethodAccessor92.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	java.lang.reflect.Method.invoke(Unknown Source)
+	org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:621)
+	org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:610)
+	org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:65)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:91)
+	org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:633)
+	ar.gob.gde.restfull.api.ee.DocumentoRestfullApi$$EnhancerBySpringCGLIB$$951f3f70.vincularDocumentosOficialesNumeroEspecial(&lt;generated&gt;)
+	sun.reflect.GeneratedMethodAccessor986.invoke(Unknown Source)
+	sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	java.lang.reflect.Method.invoke(Unknown Source)
+	org.springframework.web.method.support.InvocableHandlerMethod.invoke(InvocableHandlerMethod.java:215)
+	org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:132)
+	org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandleMethod(RequestMappingHandlerAdapter.java:745)
+	org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:685)
+	org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:80)
+	org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:919)
+	org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:851)
+	org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:953)
+	org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:855)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:650)
+	org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:829)
+	javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+</pre></p><p><b>nota</b> <u>La traza completa de la causa de este error se encuentra en los archivos de diario de Apache Tomcat/7.0.70.</u></p><HR size="1" noshade="noshade"><h3>Apache Tomcat/7.0.70</h3></body></html>

@@ -1,0 +1,15 @@
+Status: FAILED
+Time Taken: 13
+Size: 0
+Timestamp: Fri Feb 24 09:36:46 ART 2017
+TestStep: EE
+Error:com.eviware.soapui.impl.wsdl.teststeps.PropertyTransferException: Error parsing target property [error: Unexpected element: CDATA]
+
+----------------- Messages ------------------------------
+Error performing transfer [EE] - Error parsing target property [error: Unexpected element: CDATA]
+----------------------------------------------------
+EE transferred [[Error parsing target property [error: Unexpected element: CDATA]]] from [caratular.Response] to [Sobre expediente bloqueado con mismo sistema..Request]
+------------ source path -------------
+//return
+------------ target path -------------
+numeroExpedienteElectronico

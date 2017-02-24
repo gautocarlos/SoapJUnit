@@ -1,0 +1,61 @@
+Status: FAILED
+Time Taken: 293
+Size: 269
+Timestamp: Tue Feb 21 15:58:01 ART 2017
+TestStep: paseConDesbloqueoBG
+
+----------------- Messages ------------------------------
+[Invalid HTTP Status Codes] Response status code: 500 is in invalid list of status codes
+
+----------------- Properties ------------------------------
+Endpoint: http://mule.nac.everis.int/EEServices/generar-pase
+Encoding: UTF-8
+
+---------------- Request ---------------------------
+Request Headers: SOAPAction : ""
+Accept-Encoding : gzip,deflate
+Content-Type : text/xml;charset=UTF-8
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ar="http://ar.gob.gcaba.ee.services.external/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ar:generarPaseEEConDesbloqueo>
+         <datosPase>
+            <codigoEE>EX-2017-00071704-   -APN-CHARLY</codigoEE>
+            <esMesaDestino>false</esMesaDestino>
+            <esReparticionDestino>false</esReparticionDestino>
+            <esSectorDestino>true</esSectorDestino>
+            <esUsuarioDestino>false</esUsuarioDestino>
+            <estadoSeleccionado>Subsanación</estadoSeleccionado>
+            <motivoPase>Pase BG</motivoPase>
+            <sistemaOrigen>AUTOMATIZADO</sistemaOrigen>
+            <usuarioOrigen>Nilracolos</usuarioOrigen>
+            <reparticionDestino>AUTOMATIZADA</reparticionDestino>
+            <sectorDestino>PVD</sectorDestino>
+         </datosPase>
+      </ar:generarPaseEEConDesbloqueo>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+---------------- Response --------------------------
+Response Headers: Transfer-Encoding : chunked
+X-MULE_SESSION : rO0ABXNyACNvcmcubXVsZS5zZXNzaW9uLkRlZmF1bHRNdWxlU2Vzc2lvbi7rdtEW7GGKAwAEWgAFdmFsaWRMAA1mbG93Q29uc3RydWN0dAAmTG9yZy9tdWxlL2FwaS9jb25zdHJ1Y3QvRmxvd0NvbnN0cnVjdDtMAAJpZHQAEkxqYXZhL2xhbmcvU3RyaW5nO0wAD3NlY3VyaXR5Q29udGV4dHQAJ0xvcmcvbXVsZS9hcGkvc2VjdXJpdHkvU2VjdXJpdHlDb250ZXh0O3hwAHB0ACQ2NzU5MGE4OS1mODY2LTExZTYtODc5Yi1mZmRkM2I3YjAxMDBwc3IAJWphdmEudXRpbC5Db2xsZWN0aW9ucyRTeW5jaHJvbml6ZWRNYXAbc/kJS0s5ewMAAkwAAW10AA9MamF2YS91dGlsL01hcDtMAAVtdXRleHQAEkxqYXZhL2xhbmcvT2JqZWN0O3hwc3IAJG9yZy5tdWxlLnV0aWwuQ2FzZUluc2Vuc2l0aXZlSGFzaE1hcJ3R2e9nRc4AAwAAeHB3DD9AAAAAAAAQAAAAAHhxAH4ACXh4
+Server : Mule Core/3.4.0
+X-MULE_ENCODING : UTF-8
+Connection : close
+http.status : 500
+#status# : HTTP/1.1 500 Internal Server Error
+http.method : POST
+Date : Tue, 21 Feb 2017 15:48:58 -0300
+Content-Type : text/xml; charset=UTF-8
+
+
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+      <soap:Fault>
+         <faultcode>soap:Server</faultcode>
+         <faultstring>No se puede operar sobre un expediente que no se encuentra bloqueado ( EE)</faultstring>
+      </soap:Fault>
+   </soap:Body>
+</soap:Envelope>
