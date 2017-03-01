@@ -15,9 +15,13 @@ import com.eviware.soapui.model.testsuite.TestSuite;
 import com.eviware.soapui.tools.SoapUITestCaseRunner;
 
 public class SoapUIProject {
-
+	
 	@Test
-	public void pruebaSoapUIRunnerReporte() throws Exception {
+	/**
+	 * Ejemplo simple implementando la clase WsdlProject (com.eviware.soapui.impl.wsdl.WsdlProject.WsdlProject) 
+	 * para procesar y ejecutar un proyecto SoapUI
+	 * */
+	public void pruebaSoapUITestCaseRunnerReporte() throws Exception {
 
 		String suiteName = "";
 		String reportStr = "";
@@ -34,7 +38,7 @@ public class SoapUIProject {
 		SoapUI.setSoapUICore(new StandaloneSoapUICore(true));
 
 		// specified soapUI project
-		WsdlProject project = new WsdlProject("proyectos_soapui/0000-AUT-001_soapui-project.xml");
+		WsdlProject project = new WsdlProject("proyectos_soapui/0000-AUT-001-soapui-project.xml");
 
 		// get a list of all test suites on the project
 		suiteList = project.getTestSuiteList();
@@ -68,12 +72,16 @@ public class SoapUIProject {
 		// string of the results
 		System.out.println(reportStr);
 	}
-
-	// @Test
-	public void pruebaSoapUIRunner() throws Exception {
+	@Test
+	/**
+	 * Ejemplo simple implementando la clase SoapUITestCaseRunner (com.eviware.soapui.impl.wsdl.WsdlProject.WsdlProject) 
+	 * para procesar y ejecutar un proyecto SoapUI
+	 * */
+	public void pruebaSoapUIRunnerLoop() throws Exception {
 		SoapUITestCaseRunner runner = new SoapUITestCaseRunner();
 		runner.setSettingsFile("config/soapui-settings.xml");
 		runner.setProjectFile("proyectos_soapui/SOAP_REST_Ejemplos_EE-GEDO.xml");
+		/** Lista de todas las Suites de pruebas del proyecto*/
 		runner.run();
 	}
 }
